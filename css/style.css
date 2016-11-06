@@ -1,5 +1,10 @@
 @charset "utf-8"; 
 
+body{
+    margin: 0;
+}
+
+
 /*fargepalett:
 - rgb(235, 219, 192)
 - rgb(121, 112, 103)
@@ -15,28 +20,67 @@
     margin-right: 15px;
     margin-bottom: 30px;
 }
-.col-4{
-    width: 306px;
-    float: left;
-}
-.col-6{
-    width: 474px;
-}
-.col-12{
-    width: 978px;
-}
+.col-1 {width: 8.33%;} 
+.col-2 {width: 16.66%;} 
+.col-3 {width: 25%;} 
+.col-4 {width: 33.33%;} 
+.col-5 {width: 41.66%;} 
+.col-6 {width: 50%;} 
+.col-7 {width: 58.33%;} 
+.col-8 {width: 66.66%;} 
+.col-9 {width: 75%;} 
+.col-10 {width: 83.33%;} 
+.col-11 {width: 91.66%;} 
+.col-12 {width: 100%;}
+
 /*-- end 978gs --*/
 
-@media screen and (min-width: 500px) and (max-width: 1024){
+
+/*--start mobile device-size--*/
+@media screen and (min-width: 0px) and (max-width: 449){
     
+    .info-box{
+        min-width: 100%;
+    }
+    
+}
+/*--End Mobile device-size--*/
+
+
+/*--Tablet size--*/
+@media screen and (min-width: 500px) and (max-width: 1024){
+         
+}
+/*--End tablet size--*/
+
+
+/*--start 1024 x 1240--*/
+@media screen and (min-width: 1024px) and (max-width: 1240){
+
+.info-box{
+    max-width: 33.33%;
+}
     
     
 }
+/*--End 1024 x 1240--*/
+
+
+/*--start 1240+ screen--*/
+@media screen and (min-width: 1240px){
     
 .info-box{
-    background-color: bisque;
-    padding: 10px;
+    max-width: 25%;
+}
+    
+}
+    
+/*--end 1240+ screen--*/
+
+.info-box{
+    background-color: rgb(235, 219, 192);
     box-sizing: border-box;
+    float: left;
 }
 
 .info-box h3{
@@ -49,21 +93,30 @@
 
 .info-box p{
     color: whitesmoke;
-    font-family: sans-serif;
+    font-family: Arial sans-serif;
     margin-top: 5px;
 }
 
-.img-responsive{
-    width: 100%;
+
+#container {
+    width: 1008px;
+    margin: auto;
 }
 
 /*-- mainPageBanner --*/
 
 #mainPageBanner{
-    height: 250px;
-    margin: auto;
-    
+    height: 350px;
+    overflow: hidden;
 }
+/*-- end mainPageBanner --*/
+
+#mainPageHeader{
+    height: 4em;
+    background-color: rgb(77, 143, 171);
+}
+
+
 /*-- end mainPageBanner --*/
     
     
